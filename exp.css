@@ -1,0 +1,17 @@
+body{
+background: url('bg.jpg') 100% 100%; 
+background-size:cover;
+text-align:top-left;
+font-family:sans-serif;
+color:#0000FF;
+
+}
+
+.name{
+position :absolute;
+Top:5px;
+left:330px;
+font-family: Lucida Handwriting; 
+font-size:40px;
+color:#4B0082;
+}

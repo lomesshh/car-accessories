@@ -1,0 +1,20 @@
+body{
+background:url('bgg.jpg')no-repeat 62% 90%;
+background-size:cover;
+text-align:top-left;
+font-family:sans-serif;
+color:#0000FF;
+
+}
+
+.button {
+    background-color: #9932CC ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+}

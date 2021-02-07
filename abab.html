@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>SIGNUP</title>
+<link rel="stylesheet" type="text/css" href="log.css">
+</head>
+<body>
+<script>
+var check = function() {
+  if (document.getElementById("password").value ==
+    document.getElementById("re_password").value) {
+    document.getElementById("message").style.color = "green";
+    document.getElementById("message").innerHTML = "matching";
+  } else {
+    document.getElementById("message").style.color = "red";
+    document.getElementById("message").innerHTML = "not matching";
+  }
+}
+
+</script>
+<div class="header">
+<h1>SIGN UP</h1>
+</div>
+<div class="main">
+<div class="submain">
+<form actiom="#" method="post">
+<input type="text" name="name" placeholder="username" value="" style="color:#fff"> 
+<br>
+<input type="text" name="phone no" placeholder="Phone No." value="" style="color:#fff"> 
+<br>
+<input type="text" name="name" placeholder="E-mail" value="" style="color:#fff"> 
+<br>
+<input type="password" name="password" id="password" placeholder="Password" value="" onkeyup="check();" style="color:#fff">
+<br>
+<input type="password" name="re-password" id="re-password" placeholder="Re-Enter Password" value="" onkeyup="check();" style="color:#fff">  
+<br>
+<a href="login.html" class="btn" value="click" onclick="alert('Register succesfully');">REGISTER</a>
+</form>
+</div>
+</div>
+</center>
+</body>
+</html>

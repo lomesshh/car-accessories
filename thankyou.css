@@ -1,0 +1,20 @@
+body { 
+	background: url('thankyou1.jpg') ; 
+	background-size: cover; 
+	font-family: Arial; 
+        font-size: 25px;
+	color: white; 
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width:50%;
+}

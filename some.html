@@ -1,0 +1,54 @@
+<html>
+<head>
+
+	<title>signup</title>
+	<script type="text/javascript">
+	  function some()
+	  {
+	  var a=document.getElementById("username").value;
+	  var c=document.getElementById("email").value;
+	  var d=document.getElementById("password").value;
+	  var e=document.getElementById("confirm password").value;
+	  var f=document.getElementById("phno").value;
+	 
+	
+	  if(a==""||c==""||d==""||e==""||f=="")
+	  {
+	  alert("please fill all the field");
+	  } 
+	  if(d==e)
+	  { alert("Registration Sucessfull");}
+
+	  if(d!=e)
+	   { alert("password do not match");}
+
+	  }
+	</script>
+</head>
+<body>
+	<body background="popcorn.jpg">
+	<center>
+	<h2><i>SIGN UP</i></h2>
+	<table>
+	
+	<form>
+	<tr><td>USERNAME:</td><td><input type="text" id="username"></td>
+	</tr>
+	<tr><td>PHONE NO:</td><td><select country>
+		<option>+91</option>
+		<option>+92</option>
+		<option>+93</option>
+		</select country>
+		<input type="text" name"t2" size"10" id="phno"></td></tr
+	<tr><td>EMAIL:</td><td><input type="text" id="email"></td></tr>
+	<tr><td>GENDER:</td><td><input type="radio" name="GENDER" >MALE
+		<input type="radio" name="GENDER">FEMALE</td></tr>
+	<tr><td>PASSWORD:</td><td><input type="password" id="password"></td></tr>
+	<tr><td>CONFIRM PASSWORD:</td><td><input type="password" id="confirm password"></td></tr>
+	<tr><td><input type="button" value="SUBMIT" width="45px"onClick="return some()" ></td></tr>
+	
+	</form>
+	</table>
+	</center>
+</body>
+</html>	

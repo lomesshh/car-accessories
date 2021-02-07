@@ -1,0 +1,79 @@
+ 
+<html>
+<head>
+<title>SIGNUP</title>
+<link rel="stylesheet" type="text/css" href="log.css">
+</head>
+<body>
+<script>
+function checkpass(){
+    var pass1=document.getElementById("pass1").value;
+    var pass2=document.getElementById("pass2").value;
+    var name= document.getElementById("name").value;
+    var phoneno=document.getElementById("phoneno").value;
+    var email=document.getElementById("email").value;
+
+	
+  
+    if(pass1==""||pass2==""||name==""||phoneno==""||email=="")
+    	{
+     	alert("please fill all the field");
+     	return false;
+     	} 
+elseif(isNaN(phoneno)==false)
+	{alert("please enter digits only");
+	}
+   
+    else if(pass1!=pass2)
+    	{   
+    		alert("password do not match...!!");
+    		return false;
+    	}
+    else if(name.length<=3 || name.length>=10)
+        {
+        	alert("username length must between 3 to 10 characters"); 
+	return false;
+        }
+ 
+    else if("phoneno.length<=10 || phoneno.length>=10")
+        {
+        	alert("phone no must be of 10 digits");
+	return false;
+        }  
+
+    else
+        { 
+        	alert("Registered Successfully..!!");
+	return true;
+        }
+}
+</script>
+
+<div class="header">
+<h1>SIGN UP</h1>
+</div>
+<div class="main">
+<div class="submain">
+
+<form action="#" method="post" name="f1">
+<input type="text" id="name" placeholder="Username" value="" style="color:#fff"> 
+<br>
+<input type="text" id="phoneno" maxlength="10" placeholder="Phone No." value="" style="color:#fff"> 
+<br>
+<input type="text" id="email" placeholder="E-mail" value="" style="color:#fff"> 
+<br>
+<input type="password" placeholder="Enter password" id="pass1" style="color:#fff">
+<br>
+<input type="password" placeholder="Re-Enter Password" id="pass2" style="color:#fff">  
+
+<br>
+<input type="button" class="btn" name="btn" value="submit" onclick="checkPass()">
+
+</form>
+</div>
+</div>
+</center>
+</body>
+</html>
+
+

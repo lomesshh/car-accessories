@@ -1,0 +1,137 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="log.css">
+<script type="text/javascript">
+function myfunction()
+{
+var a=document.forms["f1"]["uname"].value;
+if(a=="")
+{
+alert("please fill  Username");
+return false;
+}
+if(a.length<9){
+alert("username must be more than 8 characters");
+return false;
+}
+
+if(a.length>20){
+alert("user name must be less than 20 characters");
+return false;
+}
+
+var b=document.forms["f1"]["fullname"].value;
+if(b=="")
+{
+alert("please fill  fullname");
+return false;
+}
+var c=document.forms["f1"]["phonenumber"].value;
+
+if(c=="")
+{
+alert("please fill contact");
+return false;
+}
+if(isNaN(c)){
+alert("enter nums only");
+}
+else{
+if(c.length<10)
+{
+alert("Contact no.must be atleast 10 digit");
+return false;
+}
+if(c.length>10){
+alert("Contact no.must be less than 10 digit");
+return false;
+}
+
+var f=document.getElementById("pass1").value;
+var g=document.getElementById("pass2").value;
+if(f=="")
+{
+alert("please enter the password");
+return false;
+}
+
+if(f.length<8){
+alert("password length must be more than 8 characters");
+return false;
+}
+
+if(f!=g){
+alert("password does not match");
+return false;
+}
+else{
+alert("you have registered successfully!")
+}
+}
+
+</script>
+</head>
+<body>
+
+<div class="header">
+<h1>SIGN UP</h1>
+</div>
+<div class="main">
+<div class="submain">
+
+<form method="post" name="f1" onsubmit="return myfunction()">
+<table>
+<tr>
+<td>
+<b><font size=4 color="white"> Username</font></b>
+</td>
+<td>
+<input type="text" id="name" class="input" style="color:#fff" name="uname"><br><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><font size=4 color="white"> Name </font></b>
+</td>
+<td>
+<input type="text"  class="input" style="color:#fff" name="fullname"><br><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><font size=4 color="white"> Phone no.</font></b>
+</td>
+<td>
+<input type="text" id="num" maxlength="10" class="input" style="color:#fff" name="phonenumber"><br><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><font size=4 color="white">Password</font></b>
+</td>
+<td><input id="pass1" type="password" class="input" style="color:#fff"> </td>
+</tr>
+<tr>
+<td>
+<b><font size=4 color="white"> Re-Enter Password </font></b>
+</td>
+<td><input id="pass2" type="password" class="input" style="color:#fff">  </td>
+</tr>
+
+</table>
+
+<br>
+<input type="button"  value="SUBMIT"  width="45px" onClick="return myfunction()" >
+</font>
+</button>
+</form>
+</div>
+</div>
+</body>
+</html>
